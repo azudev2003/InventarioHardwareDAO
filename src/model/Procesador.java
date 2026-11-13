@@ -13,6 +13,7 @@ public class Procesador extends Componente{
 
     @Override
     public void mostrarDetalles() {
-        System.out.println("Procesador " + marca + " " + modelo + " de " + nucleos + " nucleos a "  + frecuenciaBase + "Precio $: " + precio);
+        System.out.println("Procesador " + marca + " " + modelo + " de " + nucleos + " nucleos a "
+                + frecuenciaBase + " GHZ " + " Precio $: " + precio + " con stock de: " + stock);
     }
 }

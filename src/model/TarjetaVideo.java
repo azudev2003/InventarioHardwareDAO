@@ -12,7 +12,7 @@ public class TarjetaVideo extends Componente{
 
    @Override
     public void mostrarDetalles(){
-       System.out.println("Tarjeta de video " + marca + " " + modelo+  " Precio $: " + precio);
+       System.out.println("Tarjeta de video " + marca + " " + modelo +  " Precio $: " + precio + " con stock de: " + stock);
    }
 
 }

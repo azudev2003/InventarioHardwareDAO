@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/InventarioHardwareCLI.iml" filepath="$PROJECT_DIR$/InventarioHardwareCLI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InventarioHardwareDAO.iml" filepath="$PROJECT_DIR$/InventarioHardwareDAO.iml" />
     </modules>
   </component>
 </project>

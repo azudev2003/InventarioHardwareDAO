@@ -33,8 +33,12 @@ public class ComponenteDAOMemoria implements ComponenteDAO{
     }
 
     @Override
-    public void actualizar(Componente componente) {
-
+    public void actualizar(Componente componenteActualizado) {
+        for(int i = 0; inventario.size() < i; i++) {
+            if (inventario.get(i).getId() == componenteActualizado.getId()) {
+                inventario.set(i, componenteActualizado);
+            }
+        }
     }
 
     @Override
