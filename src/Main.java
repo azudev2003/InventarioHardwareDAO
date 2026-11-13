@@ -52,4 +52,26 @@ void main() {
     }
 
     System.out.println("");
+
+    System.out.println("Prueba de actualizacion.");
+
+    Componente aEditar = dao.buscarPorId(1);
+
+    if(aEditar != null){
+        System.out.println("Stock antiguo: " + aEditar.getStock() + " unidades.");
+
+        aEditar.setStock(30);
+
+        dao.actualizar(aEditar);
+
+        System.out.println("Actualizacion completa...");
+
+    }
+
+    System.out.println("Inventario actual: " + c1.getStock());
+    System.out.println("");
+
+    for(Componente c : dao.listarTodos()){
+        c.mostrarDetalles();
+    }
 }
