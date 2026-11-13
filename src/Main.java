@@ -16,14 +16,13 @@ void main() {
     System.out.println("Guardando....");
     dao.guardar(c1);
     dao.guardar(c2);
+    System.out.println("");
 
     for(Componente c : dao.listarTodos()){
-        System.out.println("Id: " + c.getId() + " " +
-                "Marca: " + c.getMarca() + " " +
-                "Modelo: " + c.getModelo() + " " +
-                "Precio: " + c.getPrecio());
-
+        c.mostrarDetalles();
     }
+
+    System.out.println("");
 
     Componente encontrado = dao.buscarPorId(2);
 
@@ -35,4 +34,22 @@ void main() {
         System.out.println("El componente no se ha encontrado.");
     }
 
+    System.out.println("");
+
+    boolean borrado = dao.eliminar(2);
+
+    if(borrado == true){
+        System.out.println("Se ha borrado correctamente!");
+    }
+    else{
+        System.out.println("No se encontro el componente...");
+    }
+
+    System.out.println("");
+
+    for(Componente c : dao.listarTodos()){
+        c.mostrarDetalles();
+    }
+
+    System.out.println("");
 }

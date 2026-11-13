@@ -39,6 +39,12 @@ public class ComponenteDAOMemoria implements ComponenteDAO{
 
     @Override
     public boolean eliminar(int id) {
+        for(int i = 0; i < inventario.size(); i++ ){
+            if(inventario.get(i).getId() == id){
+                inventario.remove(i);
+                return true;
+            }
+        }
         return false;
     }
 }
